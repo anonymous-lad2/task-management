@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ThemeProvider, CssBaseline, Container, IconButton, Typography } from "@mui/material";
 import { lightTheme, darkTheme } from "./theme/theme";
 import { Brightness4, Brightness7 } from "@mui/icons-material";
+import TaskForm from "./components/TaskForm";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           {darkMode ? <Brightness7 /> : <Brightness4 />}
         </IconButton>
         <Typography variant="h4">Task Manager</Typography>
+        <TaskForm />
       </Container>
     </ThemeProvider>
   );
